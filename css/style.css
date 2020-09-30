@@ -1,0 +1,321 @@
+html {
+  height: 100%;
+  width: 100vw;
+}
+
+html {
+  height: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* ---------------------------------- Login --------------------------------- */
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.login-form {
+  margin: auto;
+  background-color: lightblue;
+  padding: 1.5rem;
+  max-width: 420px;
+}
+
+.login-btn_submit {
+  min-width: calc(100% / 2)
+}
+
+
+/* ---------------------------------- Menú ---------------------------------- */
+
+.custom-navbar {
+  min-height: 7rem;
+  background-color: #3598db;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navbar-menu {
+  display: flex;
+  min-height: 100%;
+}
+
+#navbar-logo {
+  font-size: 2rem;
+  background-color: hsl(203, 62%, 46%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25rem;
+  color: white;
+}
+
+.notificaciones {
+  background-color: hsl(203, 62%, 46%);
+  min-height: 100%;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.img-notificacion {
+  width: 30px;
+  min-height: 100%;
+}
+
+.img-avatar {
+  width: 50px;
+}
+
+.img-submenu {
+  width: 15px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.menu-derecho {
+  background-color: hsl(205, 62%, 38%) !important;
+  width: auto;
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: .5rem;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --------------------------------- Sidebar -------------------------------- */
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+  height: calc(100vh - 7rem);
+}
+
+.sidebar {
+  min-width: 25rem;
+  min-height: 100%;
+  background-color: hsl(211, 28%, 25%);
+
+}
+
+.busqueda {
+  padding: 1.5rem;
+  background-color: hsl(209, 30%, 20%);
+}
+
+.busqueda-input {
+  width: 100%;
+}
+
+input[type='text'] {
+  background-color: hsl(211, 28%, 25%);
+  color: white;
+  margin: 0 !important
+    /* background-image: url("./search.svg");
+  background-position: 7px 7px; */
+    /* background-repeat: no-repeat; */
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.menu-link {
+  color: gray;
+  text-decoration: none;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  line-height: 2em;
+  ;
+}
+
+.menu-link:hover {
+  background-color: hsl(345, 56%, 56%);
+  color: white;
+}
+
+.dashboard {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  display: flex;
+  max-height: auto;
+  align-items: center;
+  width: 100%;
+}
+
+h5 {
+  margin: 0 !important;
+}
+
+/* ------------------------------ Mis pacientes ----------------------------- */
+
+.pacientes {
+  background-color: hsl(192, 17%, 94%);
+  padding: 1rem;
+  height: auto;
+  text-align: center;
+  max-width: 200px;
+  margin: 1rem;
+}
+
+.pacientes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-paciente {
+  height: 100px !important;
+  border-radius: 100%;
+}
+
+
+.paciente-ver {
+  background-color: hsl(345, 56%, 56%);
+  color: white;
+}
+
+.diagnostico {
+  color: hsl(204, 53%, 55%);
+  margin-bottom: 1rem;
+}
+
+/* --------------------------- Paciente individual -------------------------- */
+
+.recuadro {
+  /* min-height: 5rem; */
+  background-color: hsl(192, 17%, 94%);
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.paciente-datos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+  padding-right: 15rem;
+}
+
+.paciente-avatar {
+  border-radius: 100%;
+  height: 80px;
+  margin-right: 1.5rem;
+}
+
+.paciente-datos-1 {
+  margin-right: 2rem;
+}
+
+.datos-propiedad {
+  color: hsl(208, 8%, 60%);
+  font-weight: bold;
+}
+
+.datos-valor {
+  color: hsl(217, 7%, 38%);
+}
+
+.historia {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+  align-items: center;
+  background-color: white;
+}
+
+.separador {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.estatus-completado {
+  align-self: flex-end;
+  color: white;
+  padding: .5rem;
+  background-color: green;
+  float: right;
+}
+
+.estatus-pendiente {
+  align-self: flex-end;
+  color: black;
+  padding: .5rem;
+  background-color: rgba(255, 255, 0, 0.363);
+  float: right;
+}
+
+.solicitar-examen {
+  width: 100%;
+  margin: 1rem 0;
+  font-weight: bold;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: hsl(345, 56%, 56%);
+}
+
+.solicitar-examen:hover {
+  color: white;
+  background-color: hsl(345, 40%, 48%);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.historia-nombre {
+  color: rgb(108, 173, 233);
+}
